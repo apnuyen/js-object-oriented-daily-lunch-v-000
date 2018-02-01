@@ -5,7 +5,7 @@ let deliveryId = 0
 let employerId = 0
 
 class Customer {
-  constructor(name, employer){
+  constructor(name, employer={}){
     this.id = ++customerId;
     if (employer) this.employerId = employerId;
     if (name) this.name = name;
