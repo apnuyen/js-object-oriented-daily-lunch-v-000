@@ -7,7 +7,7 @@ let employerId = 0
 class Customer {
   constructor(name, employer={}){
     this.id = ++customerId;
-    if (employer) this.employerId = employerId;
+    if (employer) this.employerId = employer.id;
     if (name) this.name = name;
     store.customers.push(this);
   }
