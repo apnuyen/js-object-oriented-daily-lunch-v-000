@@ -36,11 +36,13 @@ class Meal {
     this.title = title;
     this.price = price;
     this.id = ++mealId;
+    store.meals.push(this)
   }
 }
 
 class Delivery {
   constructor(){
+    store.deliveries.push(this)
 
   }
 }
@@ -48,6 +50,7 @@ class Delivery {
 
 class Employer {
   constructor(){
+    store.employers.push(this)
 
   }
 }
