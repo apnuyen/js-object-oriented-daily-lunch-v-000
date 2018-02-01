@@ -32,8 +32,10 @@ class Customer {
 }
 
 class Meal {
-  constructor(){
-
+  constructor(title, price){
+    this.title = title;
+    this.price = price;
+    this.id = ++mealId;
   }
 }
 
