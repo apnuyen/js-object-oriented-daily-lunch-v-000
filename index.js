@@ -61,7 +61,7 @@ class Meal {
 class Delivery {
   constructor(meal, customer){
     this.id = ++deliveryId;
-    this.mealId = meal.id;
+    this.mealId = mealId;
     this.customerId = customer.id;
     store.deliveries.push(this)
   }
@@ -116,7 +116,7 @@ class Employer {
       return totals[meal.id] = 0
     })
     allMeals.forEach(function(meal){
-      return totals[meal.id]++ 
+      return totals[meal.id]++
     })
     return totals
   }
