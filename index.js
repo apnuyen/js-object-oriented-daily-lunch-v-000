@@ -42,14 +42,15 @@ class Meal {
 
 class Delivery {
   constructor(){
+    this.id = ++deliveryId;
     store.deliveries.push(this)
-
   }
 }
 
 
 class Employer {
   constructor(){
+    this.id = ++employerId;
     store.employers.push(this)
 
   }
