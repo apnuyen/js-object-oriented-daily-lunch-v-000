@@ -100,6 +100,13 @@ class Employer {
     return [].concat.apply([], allDeliveries)
   }
 
+  meals(){
+    let allMeals = this.deliveries().map(delivery => {
+      return delivery.meal()
+    })
+    return [...new Set(allMeals)]
+  }
+  
   mealTotals(){
 
   }
