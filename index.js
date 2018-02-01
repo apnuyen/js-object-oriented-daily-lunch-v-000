@@ -59,14 +59,33 @@ class Delivery {
     this.customerId = customerId;
     store.deliveries.push(this)
   }
+
+  meal(){
+    
+  }
+
+  customer(){
+    
+  }
 }
 
 
 class Employer {
-  constructor(){
+  constructor(name){
     this.id = ++employerId;
-    
+    this.name = name; 
     store.employers.push(this)
+  }
 
+  employees(){
+    
+  }
+
+  deliveries(){
+    
+  }
+
+  mealTotals(){
+    
   }
 }
