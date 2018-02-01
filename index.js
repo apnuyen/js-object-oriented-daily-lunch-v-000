@@ -40,32 +40,36 @@ class Meal {
   }
 
   deliveries(){
-    
+    return store.deliveries.filter(delivery => {
+      return delivery.mealId == this.id;
+    })
   }
 
   customers(){
-    
+    return this.deliveries().map(delivery => {
+      return delivery.customer();
+    })
   }
 
   byPrice(){
-    
+
   }
 }
 
 class Delivery {
   constructor(meal, customer){
     this.id = ++deliveryId;
-    this.mealId = mealId; 
+    this.mealId = mealId;
     this.customerId = customerId;
     store.deliveries.push(this)
   }
 
   meal(){
-    
+
   }
 
   customer(){
-    
+
   }
 }
 
@@ -73,19 +77,19 @@ class Delivery {
 class Employer {
   constructor(name){
     this.id = ++employerId;
-    this.name = name; 
+    this.name = name;
     store.employers.push(this)
   }
 
   employees(){
-    
+
   }
 
   deliveries(){
-    
+
   }
 
   mealTotals(){
-    
+
   }
 }
