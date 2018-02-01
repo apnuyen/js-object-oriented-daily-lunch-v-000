@@ -4,20 +4,21 @@ let customerId = 0
 class Customer {
   constructor(name, employer){
     this.id = ++customerId;
-    this.employerId = employerId;
-    this.name = name
+    if (employer) this.employerId = employerId;
+    if (name) this.name = name;
+    store.customers.push(this);
   }
 
   meals(){
-    
+
   }
 
   deliveries(){
-    
+
   }
 
   totalSpent(){
-    
+
   }
 }
 
