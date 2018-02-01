@@ -1,3 +1,4 @@
+let store = {customers: [], meals: [], deliveries: [], employers: []}
 let customerId = 0
 
 class Customer {
@@ -5,6 +6,18 @@ class Customer {
     this.id = ++customerId;
     this.employerId = employerId;
     this.name = name
+  }
+
+  meals(){
+    
+  }
+
+  deliveries(){
+    
+  }
+
+  totalSpent(){
+    
   }
 }
 
