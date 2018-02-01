@@ -73,7 +73,9 @@ class Delivery {
   }
 
   customer(){
-
+    return store.customers.fund(customer => {
+      return customer.id === this.customerId;
+    })
   }
 }
 
